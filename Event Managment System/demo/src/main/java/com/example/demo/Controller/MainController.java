@@ -34,11 +34,11 @@ public class MainController {
     @PostMapping("/OrgAdd")
     public Organizer new_org_add(@RequestBody Organizer organizer)
     {
-        Organizer ooo=new Organizer();
-        ooo.setEvent(organizer.getEvent());
-        ooo.setContactInfo(organizer.getContactInfo());
-        ooo.setId(organizer.getId());
-        ooo.setName(organizer.getName());
+        // Organizer ooo=new Organizer();
+        // ooo.setEvent(organizer.getEvent());
+        // ooo.setContactInfo(organizer.getContactInfo());
+        // ooo.setId(organizer.getId());
+        // ooo.setName(organizer.getName());
         Organizer org=organixerServices.newOrganizer(organizer);
         return org;
     }
@@ -173,14 +173,14 @@ public class MainController {
     {
         Event e=new Event();
         // e.setId(62);
-        e.setEventName("gggg");
-        e.setEventDate("0gggg");
-        e.setDescription("Ligggggggga");
+        e.setEventName("event name");
+        e.setEventDate("event dt");
+        e.setDescription("desc");
 
         Organizer o=new Organizer();
-        o.setName("Aggggg");
-        o.setId(88889);
-        o.setContactInfo("ggggg5");
+        o.setName("organizer name");
+        o.setId(101);  
+        o.setContactInfo("contact no");
         e.setOrganizer(o);
 
 
@@ -190,9 +190,9 @@ public class MainController {
 
         Venue v=new Venue();
         // v.setId(72);
-        v.setName("powerlooma");
-        v.setLocation("kharpudi");
-        v.setCapacity("Big");
+        v.setName("venue name");
+        v.setLocation("location name");
+        v.setCapacity("capacity");
 
         v.setEvent(e);
         e.setVenue(v);
