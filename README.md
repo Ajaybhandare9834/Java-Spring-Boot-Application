@@ -2,7 +2,7 @@
 
 Java Spring Boot Application: Event Managment System
 
-Develop a Java Spring Boot Application to manage events, Venues, and organizers.
+Developed a Java Spring Boot Application to manage events, Venues, and organizers.
 The Applications support CRUD operations for these entities.
 
 Entities:
